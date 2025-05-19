@@ -1,20 +1,18 @@
-[project]
+[tool.poetry]
 name = "forsit-task"
 version = "0.1.0"
 description = "E-commerce Admin API"
-authors = [
-    {name = "faizi11111",email = "faizanfarooq993@gmail.com"}
-]
+authors = ["faizi11111 <faizanfarooq993@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = [
-    "fastapi (>=0.115.12,<0.116.0)",
-    "uvicorn (>=0.34.2,<0.35.0)",
-    "sqlalchemy (>=2.0.41,<3.0.0)",
-    "pydantic (>=2.11.4,<3.0.0)",
-    "python-dotenv (>=1.1.0,<2.0.0)"
-]
+packages = [{include = "app"}]
 
+[tool.poetry.dependencies]
+python = ">=3.13"
+fastapi = ">=0.115.12,<0.116.0"
+uvicorn = ">=0.34.2,<0.35.0"
+sqlalchemy = ">=2.0.41,<3.0.0"
+pydantic = ">=2.11.4,<3.0.0"
+python-dotenv = ">=1.1.0,<2.0.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
