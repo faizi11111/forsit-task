@@ -1,6 +1,6 @@
 ## Prerequisites
 
-- Python 3.8 or higher
+- Python 3.12 (required)
 - Poetry (Python dependency management tool)
 
 ## Installation
